@@ -6,8 +6,8 @@ import (
 
 func Provider() *schema.Provider {
         return &schema.Provider{
-                ResourcesMap: map[string]*schema.Resource{
-                        "skeleton_skeleton": resourceSkeleton(),
+                DataSourcesMap: map[string]*schema.Resource{
+                        "coinbase_address": dataCoinbaseAddress(),
                 },
         }
 }
